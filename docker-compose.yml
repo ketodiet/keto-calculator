@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+    client:
+        build: .
+        command: [webpack-dev-server, --progress, --profile, --hot]
+        volumes:
+            - .:/var/www
+            - /var/www/node_modules
+        ports:
+            - 8080:8080
