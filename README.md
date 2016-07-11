@@ -15,7 +15,7 @@ You'll have to setup a simple React & Docker dev environment. Here's what you'll
 
 ### Develop & Debug
 
-1. We use [WebStorm](https://www.jetbrains.com/webstorm/) & Chrome for our development. You can download  trial version of WebStorm to try it.
+1. We use [WebStorm](https://www.jetbrains.com/webstorm/) & Chrome for development. You can download  trial version of WebStorm to try it.
 1. The demo page is developed using ReactJS. To find out more about ReactJS, please visit [https://facebook.github.io/react/](https://facebook.github.io/react/)
  
 
