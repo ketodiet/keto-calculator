@@ -17,7 +17,7 @@ var Warnings = {
     LOW_BODYFAT: (1<<0),
 
     //
-    // Fat intake (in grams) required to meet desirable level are too low (less then 30g)
+    // Fat intake (in grams) required to meet desirable level is too low (less then 30g)
     //
     LOW_FATGRAMS: (1<<1),
 
