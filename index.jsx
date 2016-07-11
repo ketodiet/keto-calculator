@@ -53,7 +53,8 @@ export class App extends React.Component {
 
         var calorieAdjustment = -15;
 
-        var typicalResult = new core.KetoDietBuddy(exampleData).calculateCalorieIntake(calorieAdjustment);
+        var kdb = new core.KetoDietBuddy(exampleData);
+        var typicalResult = kdb.calculateCalorieIntake(calorieAdjustment);
 
 		return (
             <div>
@@ -101,9 +102,12 @@ export class App extends React.Component {
 
                         var calorieAdjustment = {calorieAdjustment};{"\n"}
 
-                        var result = new core.KetoDietBuddy(exampleData).calculateCalorieIntake(calorieAdjustment);{"\n"}
+                        var kdb = new core.KetoDietBuddy(exampleData);{"\n"}
+                        var result = kdb.calculateCalorieIntake(calorieAdjustment);{"\n"}
                     </pre>
                 </div>
+
+                <h3>Calculated Basal Metabolic Rate (BMR): {Math.round(kdb.bmr)} kcal</h3>
 
                 <h3>Calculated values for maintenance level</h3>
                 <ResultsSection result={typicalResult.maintenance} />
@@ -238,7 +242,8 @@ class Results extends React.Component {
     render() {
 
         try {
-            var result = new core.KetoDietBuddy(this.props.params).calculateCalorieIntake(this.props.others.calorieAdjustment);
+            var kdb = new core.KetoDietBuddy(this.props.params);
+            var result = kdb.calculateCalorieIntake(this.props.others.calorieAdjustment);
             var textResult = JSON.stringify(result, null, 4);
 
             var calorieAdjustment = (result.adjustment < 0) ? -result.adjustment + "% deficit" : result.adjustment + "% surplus";
@@ -268,6 +273,7 @@ class Results extends React.Component {
                             <ResultsSectionItem name="Warnings" value={warnings}/>
                         </tbody>
                     </table>
+                    <h4>Calculated Basal Metabolic Rate (BMR): {Math.round(kdb.bmr)} kcal</h4>
                     <h4>Minimum</h4>
                     <ResultsSection result={result.minimum} />
                     <h4>Maintenance</h4>
