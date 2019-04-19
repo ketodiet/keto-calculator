@@ -24,3 +24,8 @@ You'll have to setup a simple React & Docker dev environment. Here's what you'll
 If you use portions of this code on your website or any application please acknowledge the original source by linking to our [Github project](https://github.com/ketodiet/keto-calculator) as shown below:
 
 `<span>Based on <a href="https://github.com/ketodiet/keto-calculator">KetoDiet calculator</a></span>`
+
+### Mobile apps using keto-calculator
+
+* [Keto Calculator for iOS](https://itunes.apple.com/us/app/keto-calculator-keto-buddy/id765076642?mt=8)
+* [Keto Calculator for Android](https://play.google.com/store/apps/details?id=com.compumasterltd.keto_calculator)
