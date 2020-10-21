@@ -29,3 +29,4 @@ If you use portions of this code on your website or any application please ackno
 
 * [Keto Calculator for iOS](https://itunes.apple.com/us/app/keto-calculator-keto-buddy/id765076642?mt=8)
 * [Keto Calculator for Android](https://play.google.com/store/apps/details?id=com.compumasterltd.keto_calculator)
+* [Keto subreddit](https://www.reddit.com/r/ketodietapp/)
