@@ -1,7 +1,7 @@
 FROM node:latest
 
 RUN mkdir -p /var/www
-RUN npm install -g webpack-dev-server webpack
+RUN npm install -g webpack-dev-server webpack --legacy-peer-deps
 
 WORKDIR /var/www
 
